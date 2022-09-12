@@ -1,0 +1,65 @@
+:root {
+  /* Color */
+  --blue-color: aqua;
+  --green-color: green;
+  --orange-color: orange;
+  --red-color: red;
+  --violet-color: violet;
+  --white-color: white;
+  --yellow-color: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pangolin", cursive;
+  font-size: 25px;
+}
+
+h1 {
+  margin: 40px 0 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.box {
+  min-height: 200px;
+  margin-top: 30px;
+  padding: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.box.change-color {
+  background: var(--yellow-color);
+}
+
+.box.toggle-color {
+  background: var(--orange-color);
+}
+
+.box.trigger {
+  background: var(--violet-color);
+}
+
+.box.target {
+  background: var(--red-color);
+}
+
+.box.trigger-all {
+  background: var(--green-color);
+}
+
+.box.trigger-all-self {
+  background: var(--blue-color);
+}
