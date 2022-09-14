@@ -44,16 +44,32 @@ h1 {
   background: var(--yellow-color);
 }
 
+.box.change-color.blue {
+  background: var(--blue-color);
+}
+
 .box.toggle-color {
   background: var(--orange-color);
+}
+
+.box.toggle-color.red {
+  background: var(--red-color);
 }
 
 .box.trigger {
   background: var(--violet-color);
 }
 
+.box.trigger.invisible {
+  display: none;
+}
+
 .box.target {
   background: var(--red-color);
+}
+
+.box.target.position {
+  transform: translateX(-105%);
 }
 
 .box.trigger-all {
@@ -62,4 +78,8 @@ h1 {
 
 .box.trigger-all-self {
   background: var(--blue-color);
+}
+
+.box.trigger-all-self.self {
+  background: var(--green-color);
 }
